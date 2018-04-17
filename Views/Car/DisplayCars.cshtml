@@ -1,0 +1,11 @@
+
+@foreach (var car in Model)
+{
+  <p>Brand: @car.GetBrand()</p>
+  <p>Model: @car.GetModel()</p>
+  <p>Mileage: @car.GetMileage()</p>
+  <p>Price: @car.GetPrice()</p>
+  <hr>
+}
+
+<p><a href="/cars/new">Add a new Car</a></p>
