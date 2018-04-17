@@ -1,11 +1,15 @@
-
+<h1>Cars</h1>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
 @foreach (var car in Model)
 {
   <p>Brand: @car.GetBrand()</p>
   <p>Model: @car.GetModel()</p>
   <p>Mileage: @car.GetMileage()</p>
-  <p>Price: @car.GetPrice()</p>
+  <p>Price: $@car.GetPrice()</p>
   <hr>
 }
-
+  <p>Brand: Honda</p>
+  <p>Model: Civic</p>
+  <p>Mileage: 12000</p>
+  <p>Price: $9000</p>
 <p><a href="/cars/new">Add a new Car</a></p>
